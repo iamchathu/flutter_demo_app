@@ -19,8 +19,14 @@ class _InvoiceState extends State<Invoice> {
 
   void addItemToInvoice(Item item) {
     setState(() {
-      // TODO: Check item already exists
-      items.add(item);
+      // TODO: Check item already exists.
+      int existingItemIndex =
+          items.indexWhere((element) => element.code == item.code);
+      if (existingItemIndex != -1) {
+        items[existingItemIndex].qty = items[existingItemIndex].qty + 1;
+      } else {
+        items.add(item);
+      }
     });
   }
 

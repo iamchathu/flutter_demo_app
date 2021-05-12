@@ -17,17 +17,17 @@ class ItemSelection extends StatelessWidget {
       price: 200,
     ),
     Item(
-      code: 1,
+      code: 2,
       itemName: "EGB",
       price: 150,
     ),
     Item(
-      code: 1,
+      code: 3,
       itemName: "Mango",
       price: 190,
     ),
     Item(
-      code: 1,
+      code: 4,
       itemName: "Smack",
       price: 120,
     ),
